@@ -23,7 +23,7 @@ This is a small console calculator project developed in Python. It demonstrates 
 Clone the repository:
 
 Bash
-git clone [https://github.com/avelasquezh/Port.git](https://github.com/avelasquezh/Port.git)
+git clone [https://github.com/avelasquezh/project-portfolio.git]
 cd your-repository-name
 Execute the Python script: Open your terminal or command prompt, navigate to the directory where you saved the calculadora_simple.py file, and run the following command:
 Bash
