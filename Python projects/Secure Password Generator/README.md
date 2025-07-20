@@ -25,7 +25,7 @@ This project is a console password generator developed in Python. It goes beyond
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/avelasquezh/Port.git](https://github.com/avelasquezh/Port.git)
+git clone [[https://github.com/avelasquezh/Port.git](https://github.com/avelasquezh/Port.git](https://github.com/avelasquezh/project-portfolio.git)]
 cd Port
 ```
 *(Make sure you're in the correct project directory within the cloned repository.)*
