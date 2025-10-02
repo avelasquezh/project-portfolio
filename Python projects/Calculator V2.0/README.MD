@@ -12,18 +12,30 @@ This is a small console project developed in Python. It uses a menu-based system
 
 ## **Skills:**
 
-- **Functions & Modularization**: Separation of responsibilities (e.g., `inicializar_calculadora`, `menu`).  
-- **Dependency Injection**: Operations (`Sumar`, `Restar`, `Multiplicar`, `Dividir`) are passed into the `Calculadora` class via a dictionary, making the system extensible.  
-- **Tuples & Multiple Return Values**: Each menu option is represented as a tuple `(label, object, internal_name)` and functions return multiple values (`calc, opciones`).  
-- **Dictionaries as Mappings**: Use of dictionaries to map menu options to operations.  
-- **Conditionals** (`if`, `elif`, `else`) for flow control.  
-- **Loops** (`while True`) for interactive user input until exit.  
-- **Exception Handling**: Specific (`DivisionPorCeroError`, `ValueError`) and generic (`Exception`) handling for robustness.  
-- **Type Casting (Casteo)**: Conversion of user input with `float(input(...))`.  
-- **String Formatting (f-strings)**: Embedding variables inside strings for dynamic output (`print(f"Resultado: {resultado}")`).  
-- **Variable Destructuring (Unpacking)**: Extracting tuple elements (`_, _, nombre_operacion = opciones[...]`).  
-- **Separation of Concerns (SRP)**: The calculator logic is separated from the user interface logic.  
-- **Error Messages & User Guidance**: Friendly messages guiding the user when errors occur.  
+- **Functions & Modularization**: Clear separation of responsibilities (e.g., `initialize_calculator`, `menu`).  
+- **Dependency Injection**: Operations (`Sum`, `Subtract`, `Multiply`, `Divide`) are injected into the `Calculator` class via a dictionary, making the system extensible and decoupled.  
+- **Object-Oriented Programming (OOP)**: Use of **classes and objects** to model the calculator and its operations.  
+- **Inheritance**: Operation classes inherit from a common base class (e.g., `Operation`), ensuring consistency.  
+- **Polymorphism**: `operation.execute(num1, num2)` dynamically calls the appropriate subclass method at runtime.  
+- **SOLID Principles**:  
+  - **S**ingle Responsibility (SRP): Each class has a single responsibility (either one operation or calculator management).  
+  - **O**pen/Closed (OCP): Open to extension (adding new operations) without modifying existing code.  
+  - **L**iskov Substitution (LSP): Any subclass of `Operation` can replace the parent class without breaking functionality.  
+  - **I**nterface Segregation (ISP): Operations only implement what they need (`execute`).  
+  - **D**ependency Inversion (DIP): The calculator depends on abstractions, not concrete implementations.  
+- **KISS Principle**: Simple, clean design without unnecessary complexity.  
+- **Tuples & Multiple Return Values**: Menu options use tuples `(label, object, internal_name)`, and functions return multiple values (`calc, options`).  
+- **Dictionaries as Mappings**: Menu keys map directly to operation classes.  
+- **Conditionals** (`if`, `elif`, `else`) for decision-making.  
+- **Loops** (`while True`) for repeated execution until exit.  
+- **Exception Handling**:  
+  - Custom errors (`DivisionByZeroError`, `ValueError`).  
+  - Generic handling (`Exception`) for robustness.  
+- **Type Casting**: Conversion of user input with `float(input(...))`.  
+- **String Formatting (f-strings)**: Embedding variables inside strings for dynamic output (`print(f"Result: {result}")`).  
+- **Variable Destructuring (Unpacking)**: Extracting tuple elements (`_, _, operation_name = options[...]`).  
+- **Error Messages & User Guidance**: Friendly messages to guide users during errors.  
+- **Separation of Concerns**: Logic (calculator) is separate from presentation (menu/printing).  
 
 ## **Execution:**
 
