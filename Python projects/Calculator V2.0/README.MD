@@ -13,7 +13,6 @@ It demonstrates not only arithmetic operations and error handling, but also **Ob
 
 ## **Skills:**
 
-<<<<<<< HEAD
 - **Functions & Modularization**: Clear separation of responsibilities (e.g., `initialize_calculator`, `menu`).  
 - **Dependency Injection**: Operations (`Sum`, `Subtract`, `Multiply`, `Divide`) are injected into the `Calculator` class via a dictionary, making the system extensible and decoupled.  
 - **Object-Oriented Programming (OOP)**: Use of **classes and objects** to model the calculator and its operations.  
@@ -38,7 +37,7 @@ It demonstrates not only arithmetic operations and error handling, but also **Ob
 - **Variable Destructuring (Unpacking)**: Extracting tuple elements (`_, _, operation_name = options[...]`).  
 - **Error Messages & User Guidance**: Friendly messages to guide users during errors.  
 - **Separation of Concerns**: Logic (calculator) is separate from presentation (menu/printing).  
-=======
+
 ### **Programming Concepts**
 - **Functions & Modularization**: Clear separation of responsibilities (`inicializar_calculadora`, `menu`).  
 - **Dictionaries as Mappings**: Associating user menu options with operations and logic.  
